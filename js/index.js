@@ -40,3 +40,26 @@ function areaAndPerimeter(){
     var perimeter = 2 * (l + w);
 
 }
+
+document.getElementById('submit').addEventListener('click', function(){
+    var num1 = document.getElementById('num1');
+    var num2 = document.getElementById('num2');
+    var num1 = parseInt(num1.value);
+    var num2 = parseInt(num2.value);
+    var operator = document.getElementById('operations').value
+
+    const pi = 3.14; 
+    const radius = 10;
+
+    var results;
+
+        if(operator === 'diameter'){
+            results = pi* (num1 * num1);
+        }else if(operator === 'radius'){
+            results = 2*pi*num1;
+
+        }
+        document.getElementById('Answer').innerHTML= `<div>${results}</div>`;
+    })
+    console.log(num1)
+    
