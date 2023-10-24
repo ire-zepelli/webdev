@@ -21,7 +21,7 @@
       <div>
         <label for="num1" class="title" id="sides">Enter Value of Sides:</label>
         <br>
-        <input type="number" id="num1">
+        <input type="number" id="num11">
       </div>
 
 
@@ -51,6 +51,50 @@
     
   </div>
 
+  <div id="Rectanglemodal">
+    <div id="dropback">
+    </div>
+    <div id="modalcontent">
+      <div id="button">
+        <button id="closed">X</button>
+      </div>
+
+      <div>
+        <label for="length" class="title" id="l">Enter length: </label>
+        <br>
+        <input type="number" id="length">
+      </div>
+      <div>
+        <label for="width" class="title" id="w">Enter width: </label>
+        <br>
+        <input type="number" id="width">
+      </div>
+      
+
+      <div>
+        <h2 class="cool-txt">Solve For: </h2>
+        <select name="founded" id="founded">
+          <option value="AreaR">Area</option>
+          <option value="PerimeterR">Perimeter</option>
+        </select>
+      </div>
+
+      <div id="Henlo">
+
+        <div>
+          <h3 class="cool-txt">THE ANSWER IS</h3>
+          <h3 class="cool-txt">↓↓</h3>
+        </div>
+
+        <div id="Valued"></div>
+      </div>
+
+      <div id="button">
+        <button id="Enter">Enter</button>
+      </div>
+    </div>
+    
+  </div>
 
   <div id="main-box">
     <h1 class="title">Geometric Shape Calculator</h1>
@@ -61,41 +105,8 @@
       <div>
         <button id="Square">Square</button>
       </div>
-
       
       <div>
-        <button id="Cicle">Circle</button>
-        <div id="Circle">
-          <legend>Circle</legend>
-          <br>
-          <legend>Solve for Circumference</legend>
-          <div class="boxa" >
-              <label for="num1"></label>
-              <input id="num1" type="number"></input>
-              </div>
-          
-              <div class="boxb">
-              <label for="operations"></label>
-              <select id="operations">
-                  <option value="diameter">diameter</option>
-                  <option value="radius">radius</option>
-      
-              </select>
-              </div>
-          
-              <div class="boxc">
-              <label for="num2"></label>
-              <input id="num2" type="number"></input>
-              </div>
-      
-              <div id="Answer"></div>
-          
-              <div class="boxd">
-              <label for="submit"></label>
-              <button id="submit">Solve</button>
-      </div>
-    </div>
-  </div>
 
 </body>
 <script src="js/index.js"></script>
