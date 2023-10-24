@@ -61,5 +61,13 @@ document.getElementById('submit').addEventListener('click', function(){
         }
         document.getElementById('Answer').innerHTML= `<div>${results}</div>`;
     })
-    console.log(num1)
-    
+    document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('CIRCLE-MODAL').style.display = 'none';
+    })
+    document.getElementById('Circle').addEventListener('click', function(){
+        document.getElementById('CIRCLE-MODAL').style.display = 'block';
+        
+    })
+    document.getElementById('backdrop').addEventListener('click', function(){
+        document.getElementById('CIRCLE-MODAL').style.display = 'none';
+    })

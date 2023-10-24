@@ -9,11 +9,47 @@
 </head>
 
 <body>
+  <div id="Circle">
+    <div id="CIRCLE-MODAL">
+      <div class="backdrop">
+      </div>
+      <div class="modalcontent">
+    <legend>Circle</legend>
+    <br>
+    <legend>Solve for Circumference</legend>
+    <div class="boxa" >
+        <label for="num1"></label>
+        <input id="num1" type="number"></input>
+        </div>
+    
+        <div class="boxb">
+        <label for="operations"></label>
+        <select id="operations">
+            <option value="diameter">diameter</option>
+            <option value="radius">radius</option>
+
+        </select>
+        </div>
+    
+        <div class="boxc">
+        <label for="num2"></label>
+        <input id="num2" type="number"></input>
+        </div>
+
+        <div id="Answer"></div>
+    
+        <div class="boxd">
+        <label for="submit"></label>
+        <button id="submit">Solve</button>
+      </div>
+  </div>
+  </div>
+</div>
 
   <div id="Squaremodal">
-    <div id="backdrop">
+    <div class="backdrop">
     </div>
-    <div id="modalcontent">
+    <div class="modalcontent">
       <div id="button">
         <button id="close">X</button>
       </div>
@@ -62,39 +98,13 @@
         <button id="Square">Square</button>
       </div>
 
-      
+     
       <div>
         <button id="Cicle">Circle</button>
-        <div id="Circle">
-          <legend>Circle</legend>
-          <br>
-          <legend>Solve for Circumference</legend>
-          <div class="boxa" >
-              <label for="num1"></label>
-              <input id="num1" type="number"></input>
-              </div>
-          
-              <div class="boxb">
-              <label for="operations"></label>
-              <select id="operations">
-                  <option value="diameter">diameter</option>
-                  <option value="radius">radius</option>
-      
-              </select>
-              </div>
-          
-              <div class="boxc">
-              <label for="num2"></label>
-              <input id="num2" type="number"></input>
-              </div>
-      
-              <div id="Answer"></div>
-          
-              <div class="boxd">
-              <label for="submit"></label>
-              <button id="submit">Solve</button>
+        
       </div>
     </div>
+  </div>
   </div>
 
 </body>
