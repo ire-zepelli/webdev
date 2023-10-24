@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/download.jpg");
+  background-image: url("../img/background.jpg");
 }
 #main-box {
   text-align: center;
@@ -40,12 +40,4 @@ button:hover{
   margin-bottom: 150px;
   text-shadow: 2px 2px #000;
   transition: 0.3s;
-}
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
 }
