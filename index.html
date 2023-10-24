@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="main-box">
-      <h1 id="title">Geometric Shape Calculator</h1>
-      <div id="shape">
-        <div>
-          <button id="Rectangle">Rectangle</button>
-        </div>
-        <div>
-          <button id="Square">Square</button>
-        </div>
-        <div id="Squaremodal">
-          <div id = "backdrop">
-          </div>
-          <div id = "modalcontent">
-            <div id="button">
-              <button id="close">X</button>     
-          </div>   
-              <label for="num1">Enter Value of Sides:</label>
-              <input type="number" id="num1">
-          </div>
-          <div><h2>Solve For</h2></div>
-          <div>
-              <select name="gyatgyat" id="gyatgyat">
-                  <option value="area">Area</option>
-                  <option value="perimeter">Perimeter</option>
-              </select>
-          </div>
-          <div id="answer">
-                  <div> 
-                      <h3>THE ANSWER IS</h3>
-                      <h3>↓↓</h3>
-                  </div>
-                  <div id="value"></div>
-              </div>
-              <div id="button">
-                <button id="solve">Solve</button>
-            </div>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div id="Squaremodal">
+    <div id="backdrop">
+    </div>
+    <div id="modalcontent">
+      <div id="button">
+        <button id="close">X</button>
       </div>
-        <div>
-          <button id="Cicle">Circle</button>
-        </div>
-        <div>
-          <button id="Cicle">test</button>
-        </div>
+      <label for="num1">Enter Value of Sides:</label>
+      <input type="number" id="num1">
+    </div>
+    <div>
+      <h2 id="title">Solve For</h2>
+    </div>
+    <div>
+      <select name="gyatgyat" id="gyatgyat">
+        <option value="area">Area</option>
+        <option value="perimeter">Perimeter</option>
+      </select>
+    </div>
+    <div id="answer">
+      <div>
+        <h3>THE ANSWER IS</h3>
+        <h3>↓↓</h3>
+      </div>
+      <div id="value"></div>
+    </div>
+    <div id="button">
+      <button id="solve">Solve</button>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="main-box">
+    <h1 id="title">Geometric Shape Calculator</h1>
+    <div id="shape">
+      <div>
+        <button id="Rectangle">Rectangle</button>
+      </div>
+      <div>
+        <button id="Square">Square</button>
+      </div>
+      <div>
+        <button id="Cicle">Circle</button>
       </div>
     </div>
-  </body>
-  <script src="js/index.js"></script>
+  </div>
+
+</body>
+<script src="js/index.js"></script>
+
 </html>

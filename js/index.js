@@ -18,6 +18,7 @@ document.getElementById('close').addEventListener('click', function(){
 })
 document.getElementById('Square').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'block';
+    
 })
 document.getElementById('backdrop').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'none';
