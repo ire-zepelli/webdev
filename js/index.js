@@ -22,3 +22,20 @@ document.getElementById('Square').addEventListener('click', function(){
 document.getElementById('backdrop').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'none';
 })
+
+function areaRectangle(){
+
+    var l = parseInt(document.getElementById("length").value);
+    var w = parseInt(document.getElementById("width").value);
+    var area = length * width;
+  
+}
+
+function areaAndPerimeter(){
+
+    var l = parseInt(document.getElementById("length").value);
+    var w = parseInt(document.getElementById("width").value);
+    var area = l * w;
+    var perimeter = 2 * (l + w);
+
+}
