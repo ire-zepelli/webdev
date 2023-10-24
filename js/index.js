@@ -41,6 +41,11 @@ function areaAndPerimeter(){
 
 }
 
+
+
+
+
+
 document.getElementById('submit').addEventListener('click', function(){
     var num1 = document.getElementById('num1');
     var num2 = document.getElementById('num2');
@@ -60,6 +65,7 @@ document.getElementById('submit').addEventListener('click', function(){
 
         }
         document.getElementById('Answer').innerHTML= `<div>${results}</div>`;
+        
     })
     document.getElementById('close').addEventListener('click', function(){
         document.getElementById('CIRCLE-MODAL').style.display = 'none';
