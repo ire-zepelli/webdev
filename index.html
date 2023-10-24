@@ -17,34 +17,43 @@
       <div id="button">
         <button id="close">X</button>
       </div>
-      <label for="num1">Enter Value of Sides:</label>
-      <input type="number" id="num1">
-    </div>
-    <div>
-      <h2 id="title">Solve For</h2>
-    </div>
-    <div>
-      <select name="gyatgyat" id="gyatgyat">
-        <option value="area">Area</option>
-        <option value="perimeter">Perimeter</option>
-      </select>
-    </div>
-    <div id="answer">
+
       <div>
-        <h3>THE ANSWER IS</h3>
-        <h3>↓↓</h3>
+        <label for="num1" class="title" id="sides">Enter Value of Sides:</label>
+        <br>
+        <input type="number" id="num1">
       </div>
-      <div id="value"></div>
+
+
+      <div>
+        <h2 class="cool-txt">Solve For: </h2>
+        <select name="find" id="find">
+          <option value="area">Area</option>
+          <option value="perimeter">Perimeter</option>
+        </select>
+      </div>
+
+      <div id="answer">
+
+        <div>
+          <h3 class="cool-txt">THE ANSWER IS</h3>
+          <h3 class="cool-txt">↓↓</h3>
+        </div>
+
+        <div id="value"></div>
+      </div>
+
+      <div id="button">
+        <button id="solve">Solve</button>
+      </div>
+
     </div>
-    <div id="button">
-      <button id="solve">Solve</button>
-    </div>
-  </div>
+    
   </div>
 
 
   <div id="main-box">
-    <h1 id="title">Geometric Shape Calculator</h1>
+    <h1 class="title">Geometric Shape Calculator</h1>
     <div id="shape">
       <div>
         <button id="Rectangle">Rectangle</button>
