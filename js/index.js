@@ -1,19 +1,42 @@
-document.getElementById('solve').addEventListener('click', function () {
-    let x = parseInt(document.getElementById('num1').value);
-    let operation = document.getElementById('find').value;
+function getAreaS(x){
+    return x*x;
+}
 
-    var answer;
+function getPerimeterS(x){
+    return x*4;
+}
+
+function getAreaR(l,w){
+    return l*w;
+}
+
+function getPerimeterR(l,w){
+    return 2*(l+w);
+}
+function getCircumD(x){
+    return 3.14*x;
+}
+function getCircumR(x){
+    return 2*3.14*x;
+}
+
+// square
+document.getElementById('solve-square').addEventListener('click', function () {
+    let x = parseInt(document.getElementById('num1').value);
+    let operation = document.getElementById('find-square').value;
+
+    var answerSquare;
     switch (operation) {
         case 'area':
-            answer = x * x;
+            answerSquare = getAreaS(x);
             break;
         case 'perimeter':
-            answer = x * 4;
+            answerSquare = getPerimeterS(x);
             break;
     }
-    document.getElementById('value').innerHTML = `<h1 style="color: #FF92C2; font-size: 50px; text-shadow: 2px 2px #000;margin: 0; padding: 0;"> ${answer} </h1>`;
+    document.getElementById('value-square').innerHTML = `<h1 style="color: #FF92C2; font-size: 50px; text-shadow: 2px 2px #000;margin: 0; padding: 0;"> ${answerSquare} </h1>`;
 })
-document.getElementById('close').addEventListener('click', function(){
+document.getElementById('close-square').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'none';
 })
 document.getElementById('Square').addEventListener('click', function(){
@@ -24,50 +47,61 @@ document.getElementById('backdrop').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'none';
 })
 
-function areaRectangle(){
 
-    var l = parseInt(document.getElementById("length").value);
-    var w = parseInt(document.getElementById("width").value);
-    var area = length * width;
-  
-}
+// //rectangle
+document.getElementById('solve-rectangle').addEventListener('click', function () {
+    let l = parseInt(document.getElementById('Length').value);
+    let w = parseInt(document.getElementById('Width').value);
+    let operation = document.getElementById('find-rectangle').value;
 
-function areaAndPerimeter(){
+    var answerRectangle;
+    switch (operation) {
+        case 'area':
+            answerRectangle = getAreaR(l,w);
+            break;
+        case 'perimeter':
+            answerRectangle = getPerimeterR(l,w);
+            break;
+    }
+    console.log(answerRectangle)
+    console.log(getAreaR(l,w));
+    console.log(getPerimeterR(l,w));
 
-    var l = parseInt(document.getElementById("length").value);
-    var w = parseInt(document.getElementById("width").value);
-    var area = l * w;
-    var perimeter = 2 * (l + w);
+    document.getElementById('value').innerHTML = `<h1 style="color: #FF92C2; font-size: 50px; text-shadow: 2px 2px #000;margin: 0; padding: 0;"> ${answerRectangle} </h1>`;
+})
+document.getElementById('close-rectangle').addEventListener('click', function(){
+    document.getElementById('RectangleModal').style.display = 'none';
+})
+document.getElementById('Rectangle').addEventListener('click', function(){
+    document.getElementById('RectangleModal').style.display = 'block';
+    
+})
+document.getElementById('backdrop').addEventListener('click', function(){
+    document.getElementById('RectangleModal').style.display = 'none';
+})
 
-}
+document.getElementById('solve-circle').addEventListener('click', function () {
+    let x = parseInt(document.getElementById('dia-radValue').value);
+    let operation = document.getElementById('find-circle').value;
 
-document.getElementById('submit').addEventListener('click', function(){
-    var num1 = document.getElementById('num1');
-    var num2 = document.getElementById('num2');
-    var num1 = parseInt(num1.value);
-    var num2 = parseInt(num2.value);
-    var operator = document.getElementById('operations').value
-
-    const pi = 3.14; 
-    const radius = 10;
-
-    var results;
-
-        if(operator === 'diameter'){
-            results = pi* (num1 * num1);
-        }else if(operator === 'radius'){
-            results = 2*pi*num1;
-
-        }
-        document.getElementById('Answer').innerHTML= `<div>${results}</div>`;
-    })
-    document.getElementById('close').addEventListener('click', function(){
-        document.getElementById('CIRCLE-MODAL').style.display = 'none';
-    })
-    document.getElementById('Circle').addEventListener('click', function(){
-        document.getElementById('CIRCLE-MODAL').style.display = 'block';
-        
-    })
-    document.getElementById('backdrop').addEventListener('click', function(){
-        document.getElementById('CIRCLE-MODAL').style.display = 'none';
-    })
+    var answerCircle;
+    switch (operation) {
+        case 'diameter':
+            answerCircle = getCircumD(x);
+            break;
+        case 'radius':
+            answerCircle = getCircumR(x);
+            break;
+    }
+    document.getElementById('value-circle').innerHTML = `<h1 style="color: #FF92C2; font-size: 50px; text-shadow: 2px 2px #000;margin: 0; padding: 0;"> ${answerCircle} </h1>`;
+})
+document.getElementById('close-circle').addEventListener('click', function(){
+    document.getElementById('Ciclemodal').style.display = 'none';
+})
+document.getElementById('Cicle').addEventListener('click', function(){
+    document.getElementById('Ciclemodal').style.display = 'block';
+    
+})
+document.getElementById('backdrop').addEventListener('click', function(){
+    document.getElementById('Ciclemodal').style.display = 'none';
+})
