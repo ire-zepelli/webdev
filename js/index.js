@@ -28,6 +28,9 @@ document.getElementById('Rectangle').addEventListener('click', function(){
 document.getElementById('close-rectangle').addEventListener('click', function(){
     document.getElementById('RectangleModal').style.display = 'none';
 })
+document.getElementById('backdrop-rectangle').addEventListener('click', function(){
+    document.getElementById('RectangleModal').style.display = 'none';
+})
 
 // square
 document.getElementById('Square').addEventListener('click', function(){
@@ -36,13 +39,18 @@ document.getElementById('Square').addEventListener('click', function(){
 document.getElementById('close-square').addEventListener('click', function(){
     document.getElementById('Squaremodal').style.display = 'none';
 })
+document.getElementById('backdrop-square').addEventListener('click', function(){
+    document.getElementById('Squaremodal').style.display = 'none';
+})
 //circle
 document.getElementById('close-circle').addEventListener('click', function(){
     document.getElementById('Ciclemodal').style.display = 'none';
 })
 document.getElementById('Cicle').addEventListener('click', function(){
     document.getElementById('Ciclemodal').style.display = 'block';
-    
+})
+document.getElementById('backdrop-circle').addEventListener('click', function(){
+    document.getElementById('Ciclemodal').style.display = 'none';
 })
 //circle
 document.getElementById('solve-square').addEventListener('click', function () {
